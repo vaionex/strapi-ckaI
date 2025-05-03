@@ -24,11 +24,18 @@
     "tag": {
       "type": "string"
     },
-    "image": {
-      "type": "json"
-    },
     "platform": {
       "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

@@ -9,7 +9,7 @@ export interface ArticlesArticles extends Struct.ComponentSchema {
   };
   attributes: {
     content: Schema.Attribute.RichText;
-    image: Schema.Attribute.JSON;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     platform: Schema.Attribute.String;
     seodescription: Schema.Attribute.String;
     tag: Schema.Attribute.String;
@@ -21,12 +21,13 @@ export interface ArticlesArticles extends Struct.ComponentSchema {
 export interface ContractsContracts extends Struct.ComponentSchema {
   collectionName: 'components_contracts_contracts';
   info: {
+    description: '';
     displayName: 'contracts';
     icon: 'archive';
   };
   attributes: {
     content: Schema.Attribute.RichText;
-    image: Schema.Attribute.JSON;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     seocontent: Schema.Attribute.String;
     timestamp: Schema.Attribute.Date;
     title: Schema.Attribute.String;
