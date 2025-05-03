@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_contracts_contracts",
+  "info": {
+    "displayName": "contracts",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "timestamp": {
+      "type": "date"
+    },
+    "title": {
+      "type": "string"
+    },
+    "seocontent": {
+      "type": "string"
+    },
+    "image": {
+      "type": "json"
+    }
+  }
+}
